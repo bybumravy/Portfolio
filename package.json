@@ -1,0 +1,10 @@
+{
+  "name": "profo",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix profolio run dev",
+    "build": "npm --prefix profolio run build",
+    "preview": "npm --prefix profolio run preview",
+    "lint": "npm --prefix profolio run lint"
+  }
+}
