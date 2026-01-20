@@ -1,47 +1,69 @@
 import type { ResumeSection } from '@/types/resume'
-
 export const RESUME: ResumeSection[] = [
-    {
-        id: 'work',
-        title: 'Work Experience',
-        items: [
-            {
-                title: 'Fullstack Developer',
-                organization: 'VPBank',
-                period: '09/2025 – Present',
-                bullets: [
-                    'Directly recruited as IT Specialist after reaching the finals of VPBank Technology Hackathon 2025',
-                    'Developing CAIP (Conversation AI Platform) to improve customer experience',
-                    'Developing and maintaining front-end and back-end features',
-                    'Optimizing performance and troubleshooting production issues',
-                    'Conducting testing and debugging to ensure deployment quality'
-                ]
-            }
-        ]
-    },
     {
         id: 'education',
         title: 'Education',
         items: [
             {
-                title: 'Bachelor of Software Engineering',
+                title: 'Bachelor at FPT University',
                 organization: 'FPT University',
-                period: '09/2023 – Present',
+                period: '09/2023 – 09/2025',
                 bullets: [
-                    'Focused on software development, algorithms, and modern web technologies',
-                    'GPA: 3.5 / 4.0',
-                    'Relevant coursework: Data Structures, Algorithms, Web Development, Database Systems',
-                    'Member of Japanese Software Engineers Club (JS Club)'
+                    '50% merit-based scholarship',
+                    'Major in Information Technology',
+                    'Active participation in academic and technical activities'
                 ]
             },
             {
-                title: 'Specialized Physics Program',
-                organization: 'Phan Boi Chau High School for the Gifted',
-                period: '08/2020 – 06/2023',
+                title: 'High School Program',
+                organization: 'FPT High School',
+                period: '2021 – 2023',
                 bullets: [
-                    'Graduated from Physics specialized class',
-                    'Built strong foundation in mathematics and science',
-                    'Participated in provincial academic competitions'
+                    'Completed general high school education',
+                    'Participated in extracurricular and academic competitions'
+                ]
+            },
+            {
+                title: 'Specialized Informatics Program',
+                organization: 'Le Quy Don High School for the Gifted – Khanh Hoa',
+                period: '2020 – 2021',
+                bullets: [
+                    'Top 10 entrance score for Informatics specialized class',
+                    'Member of Informatics school team'
+                ]
+            }
+        ]
+    },
+    {
+        id: 'work',
+        title: 'Work Experience',
+        items: [
+            {
+                title: 'AI Training Assistant',
+                organization: 'BKACAD Technology Academy',
+                period: '2024 – 2025',
+                bullets: [
+                    'Worked as AI training staff',
+                    'Supported teaching and training activities related to AI',
+                    'Assisted learners with practical AI applications'
+                ]
+            },
+            {
+                title: 'Teaching Assistant – Basic Programming Course',
+                organization: 'FPT_JSClub',
+                period: '2024',
+                bullets: [
+                    'Assisted in teaching basic coding concepts and algorithms to beginners.'
+                ]
+            },
+            {
+                title: 'International Training Program',
+                organization: 'FPT Japan Academy',
+                period: '09/2025 – 12/2025',
+                bullets: [
+                    'Participated in 3-month study and training program in Japan',
+                    'Focused on technology, culture, and professional skills',
+                    'Improved Japanese working environment adaptability'
                 ]
             }
         ]
@@ -51,23 +73,21 @@ export const RESUME: ResumeSection[] = [
         title: 'Activities',
         items: [
             {
-                title: 'Head of Expertise Department Gen 12',
-                organization: 'JS Club – Japanese Software Engineers',
-                period: '01/2024 – Present',
+                title: 'Technical Committee Member',
+                organization: 'JS Club',
+                period: '2023 – 2024',
                 bullets: [
-                    'Led and managed all technical activities in the club',
-                    'Delegated tasks and coordinated officer team',
-                    'Organized tech workshops and coding competitions'
+                    'Participated in technical tasks and system support',
+                    'Collaborated with other members on club projects'
                 ]
             },
             {
-                title: 'Head of Expertise Department',
-                organization: 'Codefest 2025 – FPT University',
-                period: '07/2025 – 08/2025',
+                title: 'Participant',
+                organization: 'Road to Olympia – Le Quy Don High School',
+                period: '2021',
                 bullets: [
-                    'Led technical team for Codefest 2025',
-                    'Coordinated with other departments',
-                    'Provided technical guidance during the event'
+                    'Joined academic inspiration program',
+                    'Represented school in intellectual activities'
                 ]
             }
         ]
@@ -77,30 +97,38 @@ export const RESUME: ResumeSection[] = [
         title: 'Honors & Awards',
         items: [
             {
-                title: 'Champion',
-                organization: 'F-Talent Code 2025 – FPT University',
-                period: '10/2025',
+                title: 'Top 8 Teams',
+                organization: 'Critical Thinking Competition – PDP',
+                period: '2022',
                 bullets: [
-                    'Algorithm contest across entire campus',
-                    'Demonstrated strong problem-solving skills'
+                    'Ranked Top 8 among participating teams',
+                    'Demonstrated strong analytical and debating skills'
                 ]
             },
             {
-                title: 'Finalist – Impressive Product Award',
-                organization: 'VPBank Technology Hackathon 2025',
-                period: '05/2025 – 08/2025',
+                title: 'City-level Awards',
+                organization: 'Academic Competitions',
+                period: '2020 – 2023',
                 bullets: [
-                    'Built AI chatbot for automatic customer responses',
-                    'Applied advanced NLP techniques',
-                    'Integrated with VPBank customer service systems'
+                    'Consolation Prize – IOE English Competition',
+                    'Consolation Prize – Violympic Mathematics',
+                    'Consolation Prize – History Competition'
                 ]
             },
             {
-                title: 'Excellent Student',
-                organization: 'FPTU Student Achievement Awards',
-                period: '08/2024',
+                title: 'Third Prize',
+                organization: 'Phu Dong Sports Festival – Chess',
+                period: '2021',
                 bullets: [
-                    'Recognized for academic excellence and contribution to university activities'
+                    'Achieved third place in city-level chess competition'
+                ]
+            },
+            {
+                title: 'English Proficiency',
+                organization: 'IELTS',
+                period: '2023',
+                bullets: [
+                    'Overall score: IELTS 5.5'
                 ]
             }
         ]

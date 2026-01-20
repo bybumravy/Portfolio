@@ -21,6 +21,8 @@ export function SocialLinks({
                 <a
                     key={label}
                     href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-3 rounded-lg border border-border/50 hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 group"
                     aria-label={label}
                 >

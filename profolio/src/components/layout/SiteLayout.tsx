@@ -12,9 +12,22 @@ export function SiteLayout({
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id)
-    element?.scrollIntoView({ behavior: 'smooth' })
+    if (!element) return
+
+    const yOffset = 100
+    const y =
+        element.getBoundingClientRect().top +
+        window.pageYOffset +
+        yOffset
+
+    window.scrollTo({
+      top: y,
+      behavior: 'smooth'
+    })
+
     setMenuOpen(false)
   }
+
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -89,14 +102,16 @@ export function SiteLayout({
           <div className="mt-auto pt-8 border-t border-border/30">
             <div className="flex gap-3">
               {SOCIAL_LINKS.map(({ icon: Icon, href, label }) => (
-                <a
-                  key={label}
-                  href={href}
-                  className="p-2 rounded-lg border border-border/50 hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 group"
-                  aria-label={label}
-                >
-                  <Icon className="h-4 w-4 group-hover:text-primary transition-colors" />
-                </a>
+                  <a
+                      key={label}
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 rounded-lg border border-border/50 hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 group"
+                      aria-label={label}
+                  >
+                    <Icon className="h-4 w-4 group-hover:text-primary transition-colors" />
+                  </a>
               ))}
             </div>
           </div>
