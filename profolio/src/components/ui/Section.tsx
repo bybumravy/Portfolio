@@ -1,36 +1,41 @@
-import type { ReactNode } from 'react'
+import type { ReactNode } from "react"
+
+type SectionProps = {
+    id: string
+    title?: string
+    description?: string
+    className?: string
+    children: ReactNode
+}
 
 export function Section({
                             id,
                             title,
                             description,
-                            children
-                        }: {
-    id: string
-    title: string
-    description?: string
-    children: ReactNode
-}) {
+                            className,
+                            children,
+                        }: SectionProps) {
     return (
         <section
             id={id}
-            className="scroll-mt-28 py-24 sm:py-28 lg:py-32"
+            className={`relative ${className ?? ""}`}
         >
-            <div className="max-w-5xl mx-auto px-6 sm:px-8">
-                <div className="mb-12">
-                    <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
-                        {title}
-                    </h2>
-
+            {(title || description) && (
+                <header className="mb-12 max-w-2xl">
+                    {title && (
+                        <h2 className="text-3xl font-bold">
+                            {title}
+                        </h2>
+                    )}
                     {description && (
-                        <p className="mt-3 text-foreground/60 max-w-2xl">
+                        <p className="mt-4 text-muted-foreground">
                             {description}
                         </p>
                     )}
-                </div>
+                </header>
+            )}
 
-                {children}
-            </div>
+            {children}
         </section>
     )
 }

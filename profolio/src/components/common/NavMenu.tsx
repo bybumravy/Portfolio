@@ -1,3 +1,12 @@
+type NavItem = {
+    id: string
+    label: string
+}
+
+type Props = {
+    items: NavItem[]
+    onNavigate: (id: string) => void
+}
 export function NavMenu({ items, onNavigate }: Props) {
     return (
         <nav className="relative space-y-1 pl-4">
