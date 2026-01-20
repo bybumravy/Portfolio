@@ -1,3 +1,5 @@
+import {Section} from "@/components/ui/Section";
+
 export function AboutSection() {
     const skills = [
         ['C++', 'C', 'Java', 'Python', 'TypeScript', 'JavaScript'],
@@ -6,7 +8,7 @@ export function AboutSection() {
     ]
 
     return (
-        <section id="about" className="py-24 px-4 border-t border-border/30">
+        <Section id="about" className="py-24 px-4 border-t border-border/30">
             <div className="max-w-5xl mx-auto">
                 <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
                     <div>
@@ -43,6 +45,6 @@ export function AboutSection() {
                     </div>
                 </div>
             </div>
-        </section>
+        </Section>
     )
 }

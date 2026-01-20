@@ -2,7 +2,7 @@ import { SiteLayout } from '@/components/layout/SiteLayout'
 import { HeroSection } from '@/components/sections/HeroSection'
 import { AboutSection } from '@/components/sections/AboutSection'
 import { ProjectsSection } from '@/components/sections/ProjectsSection'
-import { ExperienceSection } from '@/components/sections/ExperienceSection'
+import { ResumeSection } from '@/components/sections/ResumeSection'
 import { ContactSection } from '@/components/sections/ContactSection'
 import { Footer } from '@/components/layout/Footer'
 
@@ -15,7 +15,7 @@ export default function App() {
             <HeroSection onNavigate={onNavigate} />
             <AboutSection />
             <ProjectsSection />
-            <ExperienceSection />
+            <ResumeSection />
             <ContactSection />
             <Footer />
           </>

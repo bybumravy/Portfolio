@@ -10,6 +10,7 @@ export type Project = {
         highlights: string[]
         role?: string
         timeline?: string
+        duration?: string
         links?: {
             live?: string
             github?: string

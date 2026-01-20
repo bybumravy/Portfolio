@@ -3,10 +3,12 @@ import { Button } from '@/components/ui/button'
 import { SocialLinks } from '@/components/common/SocialLinks'
 import { SOCIAL_LINKS } from '@/data/constants'
 import profileImage from '@/assets/picture.jpg'
+import {Section} from "@/components/ui/Section";
+
 
 export function HeroSection({ onNavigate }: { onNavigate: (id: string) => void }) {
     return (
-        <section
+        <Section
             id="home"
             className="relative min-h-screen flex items-center justify-center px-4 py-20 overflow-hidden"
         >
@@ -71,6 +73,6 @@ export function HeroSection({ onNavigate }: { onNavigate: (id: string) => void }
                     </div>
                 </div>
             </div>
-        </section>
+        </Section>
     )
 }

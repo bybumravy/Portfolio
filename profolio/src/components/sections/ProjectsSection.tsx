@@ -2,13 +2,14 @@ import { useState } from 'react'
 import { PROJECTS } from '@/data/projects'
 import { ProjectCard } from '../projects/ProjectCard'
 import { ProjectModal } from '../projects/ProjectModal'
+import {Section} from "@/components/ui/Section";
 
 export function ProjectsSection() {
     const [active, setActive] = useState<number | null>(null)
     const [hovered, setHovered] = useState<number | null>(null)
 
     return (
-        <section id="work" className="py-24 px-4 bg-secondary/20 border-t border-border/30">
+        <Section id="work" className="py-24 px-4 bg-secondary/20 border-t border-border/30">
             <div className="max-w-5xl mx-auto">
                 <h2 className="text-4xl sm:text-5xl font-bold mb-16 leading-tight">
                     Highlighted
@@ -32,6 +33,6 @@ export function ProjectsSection() {
                     <ProjectModal project={PROJECTS[active]} onClose={() => setActive(null)} />
                 )}
             </div>
-        </section>
+        </Section>
     )
 }

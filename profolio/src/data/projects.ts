@@ -16,6 +16,7 @@ export const PROJECTS: Project[] = [
                 'Improved usability with clear information hierarchy',
                 'Focused on performance and mobile-friendly layout'
             ],
+            duration: '3 months',
             timeline: 'Highlighted project',
             role: 'Frontend Developer',
             links: {
@@ -45,7 +46,8 @@ export const PROJECTS: Project[] = [
             links: {
                 live: '#',
                 github: '#'
-            }
+            },
+            duration: '3 months'
         }
     }
 ]
