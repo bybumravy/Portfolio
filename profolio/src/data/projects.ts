@@ -3,6 +3,9 @@ import ielts from '@/assets/ielts.png'
 import rent from '@/assets/rent.png'
 import luckyWheel from '@/assets/LuckyWheel.png'
 import portfolio from '@/assets/portfolio.png'
+import iotCarImg from '@/assets/iot.jpg'
+import iotHand from '@/assets/iothand.mp4'
+
 
 export const PROJECTS: Project[] = [
     {
@@ -10,6 +13,7 @@ export const PROJECTS: Project[] = [
         category: 'Highlighted Project',
         desc: 'Built a user-friendly web interface to help students easily find and rent accommodations.',
         image: rent,
+        video: '/videos/iot-car-demo.mp4',
         tech: ['HTML', 'CSS', 'JavaScript'],
         gradient: 'from-emerald-500/20 to-blue-500/20',
         details: {
@@ -102,5 +106,33 @@ export const PROJECTS: Project[] = [
                 github: 'https://github.com/bybumravy/Portfolio'
             }
         }
+    },
+
+    {
+        title: 'Gesture and Mobile Controlled IoT Car',
+        category: 'IoT Project',
+        desc: 'An IoT-based smart car controlled using hand gestures and a mobile phone.',
+        image: iotCarImg,
+        video: iotHand,
+        tech: ['Arduino', 'ESP32', 'MPU6050', 'Bluetooth', 'Mobile App'],
+        gradient: 'from-emerald-500/20 to-cyan-500/20',
+        details: {
+            overview:
+                'An IoT-based smart car system that allows users to control movement using hand gestures and a smartphone application.',
+            highlights: [
+                'Hand gesture control using MPU6050 sensor',
+                'Mobile phone control via Bluetooth/WiFi',
+                'Real-time response and smooth motion control',
+                'IoT integration for smart vehicle operation'
+            ],
+            duration: '3 months',
+            timeline: 'University Project',
+            role: 'IoT Developer',
+            links: {
+                live: '#',
+                github: 'https://github.com/yourusername/iot-gesture-car'
+            }
+        }
     }
+
 ]

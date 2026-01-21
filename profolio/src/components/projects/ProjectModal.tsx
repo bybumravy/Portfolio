@@ -106,6 +106,28 @@ export function ProjectModal({
 
                     {/* ===== Content ===== */}
                     <div className="p-6 sm:p-8 overflow-y-auto">
+                        {/* ===== Video Demo ===== */}
+                        {project.video && (
+                            <div className="mb-8 rounded-2xl overflow-hidden border border-border/40 bg-black">
+                                {project.video.includes('youtube') ? (
+                                    <iframe
+                                        src={project.video}
+                                        title="Project Demo Video"
+                                        className="w-full aspect-video"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen
+                                    />
+                                ) : (
+                                    <video
+                                        src={project.video}
+                                        controls
+                                        preload="metadata"
+                                        className="w-full aspect-video object-cover"
+                                    />
+                                )}
+                            </div>
+                        )}
+
                         {/* ===== Overview ===== */}
                         <p className="text-foreground/70 leading-relaxed">
                             {project.details.overview}

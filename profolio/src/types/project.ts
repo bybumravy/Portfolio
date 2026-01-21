@@ -3,6 +3,7 @@ export type Project = {
     category: string
     desc: string
     image: string
+    video?: string
     tech: string[]
     gradient: string
     details: {
