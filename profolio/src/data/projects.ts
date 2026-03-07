@@ -13,7 +13,6 @@ export const PROJECTS: Project[] = [
         category: 'Highlighted Project',
         desc: 'Built a user-friendly web interface to help students easily find and rent accommodations.',
         image: rent,
-        video: '/videos/iot-car-demo.mp4',
         tech: ['HTML', 'CSS', 'JavaScript'],
         gradient: 'from-emerald-500/20 to-blue-500/20',
         details: {
@@ -28,7 +27,6 @@ export const PROJECTS: Project[] = [
             timeline: 'Highlighted project',
             role: 'Frontend Developer',
             links: {
-                live: '#',
                 github: 'https://github.com/phongnd1203/jsclub-gen12-cm4-project'
             }
         }
@@ -102,7 +100,6 @@ export const PROJECTS: Project[] = [
             timeline: 'Personal project',
             role: 'Frontend Developer',
             links: {
-                live: '#',
                 github: 'https://github.com/bybumravy/Portfolio'
             }
         }
@@ -129,7 +126,6 @@ export const PROJECTS: Project[] = [
             timeline: 'University Project',
             role: 'IoT Developer',
             links: {
-                live: '#',
                 github: 'https://github.com/yourusername/iot-gesture-car'
             }
         }

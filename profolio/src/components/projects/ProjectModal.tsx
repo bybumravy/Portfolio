@@ -133,7 +133,7 @@ export function ProjectModal({
                             {project.details.overview}
                         </p>
 
-                        {/* ===== Divider ===== */}
+                        {/* ===== Divider ====  = */}
                         <div className="my-8 h-px w-full bg-gradient-to-r from-transparent via-border to-transparent" />
 
                         {/* ===== Tech Stack ===== */}
@@ -187,12 +187,12 @@ export function ProjectModal({
                                     target="_blank"
                                     rel="noreferrer"
                                     className="
-                    inline-flex items-center justify-center
-                    rounded-xl border border-border/50
-                    px-4 py-2 text-sm text-foreground/80
-                    hover:border-primary/40 hover:bg-primary/5
-                    transition-all
-                  "
+        inline-flex items-center justify-center
+        rounded-xl border border-border/50
+        px-4 py-2 text-sm text-foreground/80
+        hover:border-primary/40 hover:bg-primary/5
+        transition-all
+      "
                                 >
                                     View code
                                     <ArrowUpRight className="ml-2 h-4 w-4" />
@@ -205,11 +205,11 @@ export function ProjectModal({
                                     target="_blank"
                                     rel="noreferrer"
                                     className="
-                    inline-flex items-center justify-center
-                    rounded-xl bg-primary
-                    px-4 py-2 text-sm text-primary-foreground
-                    hover:bg-primary/90 transition-all
-                  "
+        inline-flex items-center justify-center
+        rounded-xl bg-primary
+        px-4 py-2 text-sm text-primary-foreground
+        hover:bg-primary/90 transition-all
+      "
                                 >
                                     Live demo
                                     <ArrowUpRight className="ml-2 h-4 w-4" />
